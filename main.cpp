@@ -21,6 +21,8 @@ int main(int argc, char** argv) {
     Point3f pot3f(1.0, 2.0, 3.0);
     Point3f pot3f1(-1.0, 4.0, 5.0);
     Normal3f n3f(2.0, 1.0, -1.0);
+    Bounds2i b2i;
+    Bounds3f b3f;
     std::cout << n3f << Normalize(n3f) << std::endl;
     std::cout << Lerp(0.5, pot3f, pot3f1) << std::endl;
     std::cout << vec2f << vec3f;

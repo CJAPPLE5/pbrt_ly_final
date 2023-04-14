@@ -5,6 +5,10 @@ set(CMAKE_CXX_STANDARD 17)
 
 find_package(glog REQUIRED)
 
+
+include(CheckCXXSourceCompiles)
+
+
 set(PBRT_CORE src/core)
 
 file(GLOB_RECURSE PBRT_SOURCES_CORE "${PBRT_CORE}/*.cpp" "${PBRT_CORE}/*.h")
